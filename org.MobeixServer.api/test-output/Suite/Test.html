@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 02 10:30:59 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36457 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='iam.registerPin.TC_09_registerMpin_for_registeredUser.TC__09()'><b>TC__09</b><br>Test class: iam.registerPin.TC_09_registerMpin_for_registeredUser</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [400]
+	at iam.registerPin.TC_09_registerMpin_for_registeredUser.TC__09(TC_09_registerMpin_for_registeredUser.java:45)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1923634801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1923634801'><pre>java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at iam.registerPin.TC_09_registerMpin_for_registeredUser.TC__09(TC_09_registerMpin_for_registeredUser.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>iam.registerPin.TC_09_registerMpin_for_registeredUser@7e0b0338</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='iam.registerPin.TC_01_Register_admin_Active_userpin.TC__01_Register_Userpin_using_Mandatory_feilds()'><b>TC__01_Register_Userpin_using_Mandatory_feilds</b><br>Test class: iam.registerPin.TC_01_Register_admin_Active_userpin</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_01_Register_admin_Active_userpin@192b07fd</td></tr>
+<tr>
+<td title='iam.registerPin.TC_02_Register_pin_InactiveUser.TC__02_Register_Userpin_InactiveUser()'><b>TC__02_Register_Userpin_InactiveUser</b><br>Test class: iam.registerPin.TC_02_Register_pin_InactiveUser</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_02_Register_pin_InactiveUser@64bfbc86</td></tr>
+<tr>
+<td title='iam.registerPin.TC_03Register_pin_DeletedUser.TC__03_Register_Userpin_DeletedUser()'><b>TC__03_Register_Userpin_DeletedUser</b><br>Test class: iam.registerPin.TC_03Register_pin_DeletedUser</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_03Register_pin_DeletedUser@64bf3bbf</td></tr>
+<tr>
+<td title='iam.registerPin.TC_04_RegisterMpin_with_NonMandatory_feilds.TC__04()'><b>TC__04</b><br>Test class: iam.registerPin.TC_04_RegisterMpin_with_NonMandatory_feilds</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_04_RegisterMpin_with_NonMandatory_feilds@55d56113</td></tr>
+<tr>
+<td title='iam.registerPin.TC_05_Leave_anyone_Mandatoryfeilds.TC__05()'><b>TC__05</b><br>Test class: iam.registerPin.TC_05_Leave_anyone_Mandatoryfeilds</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_05_Leave_anyone_Mandatoryfeilds@148080bb</td></tr>
+<tr>
+<td title='iam.registerPin.TC_06_RegisterMpin_non_created_user.TC__06()'><b>TC__06</b><br>Test class: iam.registerPin.TC_06_RegisterMpin_non_created_user</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_06_RegisterMpin_non_created_user@dc24521</td></tr>
+<tr>
+<td title='iam.registerPin.TC_07_Pin_lessthan4_digits.TC__07()'><b>TC__07</b><br>Test class: iam.registerPin.TC_07_Pin_lessthan4_digits</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_07_Pin_lessthan4_digits@10bdf5e5</td></tr>
+<tr>
+<td title='iam.registerPin.TC_08_Pin_length_greater_than4.TC__08()'><b>TC__08</b><br>Test class: iam.registerPin.TC_08_Pin_length_greater_than4</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_08_Pin_length_greater_than4@6e1ec318</td></tr>
+<tr>
+<td title='iam.registerPin.TC_10_RegisterMpin_with_alphanumericValues.TC__10()'><b>TC__10</b><br>Test class: iam.registerPin.TC_10_RegisterMpin_with_alphanumericValues</td>
+<td></td>
+<td>0</td>
+<td>iam.registerPin.TC_10_RegisterMpin_with_alphanumericValues@617faa95</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44040" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:37:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44040" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:37:31Z">
+      <class name="iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds">
+        <test-method status="PASS" signature="setup()[pri:0, instance:iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds@1e397ed7]" name="setup" is-config="true" duration-ms="183" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:36:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createMerchant()[pri:0, instance:iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds@1e397ed7]" name="createMerchant" is-config="true" duration-ms="43815" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:37:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createMerchant -->
+        <test-method status="PASS" signature="TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds()[pri:0, instance:iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds@1e397ed7]" name="TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds" duration-ms="18" started-at="2020-07-22T10:37:31Z" finished-at="2020-07-22T10:37:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds -->
+      </class> <!-- iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

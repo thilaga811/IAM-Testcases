@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <listeners>
+    <listener class-name="mobeixapi.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="mobeixServer.userManagement_Update_User.TC_05_Update_user_without_userType">
+        <methods>
+          <include name="TC_05__Update_user_without_userType"/>
+          <include name="createMerchant"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- mobeixServer.userManagement_Update_User.TC_05_Update_user_without_userType -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
