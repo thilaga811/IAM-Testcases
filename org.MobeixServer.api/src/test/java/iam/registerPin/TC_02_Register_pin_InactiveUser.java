@@ -7,10 +7,8 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import mobeixapi.base.base;
-import mobeixapi.utilities.RestUtil;
 public class TC_02_Register_pin_InactiveUser extends base{
 	@SuppressWarnings("unchecked")
 	@BeforeClass

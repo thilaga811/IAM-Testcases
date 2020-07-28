@@ -9,7 +9,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.restassured.http.Method;
 import mobeixapi.base.base;
-import mobeixapi.utilities.RestUtil;
 
 public class TC_06_RegisterMpin_non_created_user extends base{
 	@SuppressWarnings("unchecked")

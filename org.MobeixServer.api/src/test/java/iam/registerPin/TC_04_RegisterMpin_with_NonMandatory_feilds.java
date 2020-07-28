@@ -9,7 +9,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.restassured.http.Method;
 import mobeixapi.base.base;
-import mobeixapi.utilities.RestUtil;
 
 public class TC_04_RegisterMpin_with_NonMandatory_feilds extends base {
 	@SuppressWarnings("unchecked")

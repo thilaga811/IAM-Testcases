@@ -8,7 +8,7 @@
 
 	<test thread-count="5" name="Test">
 		<packages>
-            <package name="iam.registerPin"/>
+            <package name="iam.getSecurityQuestionsList"/>
         </packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import mobeixapi.base.base;
 import mobeixapi.utilities.RestUtil;
+
 
 public class TC_01_Create_Merchant_using_Mandatory_feilds extends base {
 

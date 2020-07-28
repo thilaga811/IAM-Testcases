@@ -6,13 +6,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="iam.registerPin.TC_09_registerMpin_for_registeredUser">
+      <class name="iam.saveSecurityQuesForUser.TC_07_saveSecQues_for_uncreated_User">
         <methods>
-          <include name="TC__09"/>
           <include name="setup"/>
-          <include name="registerUserpin"/>
+          <include name="saveSecurityQues"/>
+          <include name="TC__07_saveSecurityQues_for_uncreated_User"/>
         </methods>
-      </class> <!-- iam.registerPin.TC_09_registerMpin_for_registeredUser -->
+      </class> <!-- iam.saveSecurityQuesForUser.TC_07_saveSecQues_for_uncreated_User -->
+      <class name="iam.saveSecurityQuesForUser.TC_08_saveSecQues_for_inactive_User">
+        <methods>
+          <include name="saveSecurityQues"/>
+          <include name="setup"/>
+          <include name="TC__08_saveSecurityQues_for_inactive_User"/>
+        </methods>
+      </class> <!-- iam.saveSecurityQuesForUser.TC_08_saveSecQues_for_inactive_User -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

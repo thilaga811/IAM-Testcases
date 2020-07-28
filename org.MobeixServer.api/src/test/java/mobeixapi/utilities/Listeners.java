@@ -13,7 +13,7 @@ public class Listeners extends base implements ITestListener {
 
 	// @Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("Start Test");
+		System.out.println("Start Test" );
 		test = reports.startTest(result.getMethod().getMethodName());
 		test.log(LogStatus.PASS, result.getMethod().getMethodName() + " STARDED");
 	}

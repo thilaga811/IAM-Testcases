@@ -8,7 +8,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import mobeixapi.utilities.RestUtil;
 import mobeixapi.base.base;
 public class TC_03_Get_deleted_MerchantDetails extends base{
 	public static void getMerchantdetails() throws Throwable {

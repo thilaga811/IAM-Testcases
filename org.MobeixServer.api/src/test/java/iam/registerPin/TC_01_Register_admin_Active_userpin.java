@@ -1,6 +1,5 @@
 package iam.registerPin;
 
-import org.testng.annotations.BeforeClass;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -8,10 +7,8 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import mobeixapi.base.base;
-import mobeixapi.utilities.RestUtil;
 
 public class TC_01_Register_admin_Active_userpin extends base {
 	

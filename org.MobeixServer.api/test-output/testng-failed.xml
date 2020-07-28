@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds">
+      <class name="iam.getSecurityQuestionsList.TC_01_getSecurityQuesList">
         <methods>
-          <include name="createMerchant"/>
-          <include name="TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds"/>
+          <include name="TC__01_getSecurityQuestionsList"/>
+          <include name="getSecQuesList"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds -->
+      </class> <!-- iam.getSecurityQuestionsList.TC_01_getSecurityQuesList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

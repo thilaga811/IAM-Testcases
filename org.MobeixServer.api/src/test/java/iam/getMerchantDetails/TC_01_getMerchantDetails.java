@@ -1,6 +1,5 @@
 package iam.getMerchantDetails;
 
-import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -8,7 +7,6 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.restassured.http.Method;
-import mobeixapi.utilities.RestUtil;
 import mobeixapi.base.base;
 
 public class TC_01_getMerchantDetails extends base {

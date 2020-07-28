@@ -7,10 +7,8 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import mobeixapi.base.base;
-import mobeixapi.utilities.RestUtil;
 
 public class TC_05_Create_Duplicate_Merchant extends base {
 	public static String merchantappkeyword = TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds.merchantappkeyword;

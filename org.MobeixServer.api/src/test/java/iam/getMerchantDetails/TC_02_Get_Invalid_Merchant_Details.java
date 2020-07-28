@@ -8,7 +8,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import mobeixapi.utilities.RestUtil;
 import mobeixapi.base.base;
 public class TC_02_Get_Invalid_Merchant_Details extends base {
 	//public static String merchantappkeyword = "DA";

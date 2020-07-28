@@ -1,5 +1,6 @@
 package mobeixapi.base;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -15,20 +16,25 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import mobeixapi.utilities.RestUtil;
 
+
+
 public class base {
 	public static RequestSpecification httpRequest;
 	public static Response response;
 	public Logger logger;
 	public static ExtentReports reports;
 	public static ExtentTest test;
-	//public static String SystemURl="http://172.17.2.28:8081/";  //MERCHANT MANAGEMENT ENVIORMENT
-	//public static String SystemURL1="http://172.17.1.96:9896/";
-	public static String SystemURL2="http://172.17.1.116:8480/";//USER MANAGEMENT ENVIORMENT
+	public static String SystemURL="http://172.17.1.116:8880/";//USER MANAGEMENT ENVIORMENT
+	public static String SystemURL2="http://172.17.1.116:8880/";
 	public static String merchantName = RestUtil.merchantName();
 	public static String groupId ="MOBEIX";
 	public static String appId = null;
+	public static String appKey = null;
 	public static String appVersion = "1.0";
-	
+	public static String ltbPrimaryKey = RandomStringUtils.randomNumeric(1);
+	public static String secretAns = RestUtil.createdBy();
+	public static String securityKey = RandomStringUtils.randomNumeric(1);
+	public static String question = RestUtil.createdBy();
 	public static String currentPIN ="";
 	//public static String pin = encrypt();
 	public static String newPIN;
@@ -59,13 +65,14 @@ public class base {
 		response=httpRequest.request(Method.POST);
 	}
 	public static void header() {
-		httpRequest.header("Content-Type","application/json");
+		//httpRequest.header("Content-Type","application/json");
 		//httpRequest.header("groupId","MOBEIX");
 		//httpRequest.header("userId","Thilaga");
+		httpRequest.header("fetchAllQues",true);
 	}
 	
 	public static String encrypt1(Object uID, String mailID) {
-		RestAssured.baseURI = "http://172.17.1.116:8480/mxcomponentapi/usermanagement/merchants/MX/encrypt";
+		RestAssured.baseURI = "http://172.17.1.116:8880/mxcomponentapi/usermanagement/merchants/MX/encrypt";
 		httpRequest = RestAssured.given();
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("userId", uID);
@@ -79,7 +86,7 @@ public class base {
 	}
 	
 	public static String encryptwithGroup(Object uID, String mailID, String grbID) {
-		RestAssured.baseURI = "http://172.17.1.116:8480/mxcomponentapi/usermanagement/merchants/MX/encrypt";
+		RestAssured.baseURI = "http://172.17.1.116:8880/mxcomponentapi/usermanagement/merchants/MX/encrypt";
 		httpRequest = RestAssured.given();
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("userId", uID);
@@ -92,16 +99,51 @@ public class base {
 		return responseBody;
 	}
 	public static void createMerchantDetails() {
-		RestAssured.baseURI=SystemURL2+"mxcomponentapi/accessmanagement/merchants/saveMerchant";
+		RestAssured.baseURI=SystemURL+"mxcomponentapi/accessmanagement/merchants/saveMerchant";
 		httpRequest=RestAssured.given();
 	}
 	public static void getMerchantdetails() throws Throwable {
-		RestAssured.baseURI=SystemURL2+"mxcomponentapi/accessmanagement/merchants/DA";
+		RestAssured.baseURI=SystemURL+"mxcomponentapi/accessmanagement/merchants/MX";
 		httpRequest=RestAssured.given();
 	}
 	public static void registerUserPin() throws Throwable {
-		RestAssured.baseURI=SystemURL2+"mxcomponentapi/usermanagement/merchants/MX/registerUserPIN";
+		RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/registerUserPIN";
 		httpRequest=RestAssured.given();
 	}
-
+public static void saveSecurityQuestions()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/saveSecurityQuestion";
+	httpRequest=RestAssured.given();
+}
+public static void saveUserSecurityQuestions()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/Kavitha/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void saveUserSecurityQuestions1()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/SSSS1/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void saveUserSecurityQuestionsForInactiveUser()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/tluI/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void saveUserSecurityQuestionsForDeletedUser()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/nandhini/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void saveUserSecurityQuestionsForUncreatedUser()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/asdd/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void saveBelow5SecQuesForUser()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/CHECKER1/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void saveSecQueswithoutCreatedBy()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/user/Success/saveUserSecurityQuestions";
+	httpRequest=RestAssured.given();
+}
+public static void getSecurityQuestionsList()throws Throwable{
+	RestAssured.baseURI=SystemURL+"mxcomponentapi/usermanagement/merchants/MX/securityQuesList";
+	httpRequest=RestAssured.given();
+}
 }

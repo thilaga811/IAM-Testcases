@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44040" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:37:31Z">
+  <suite name="Suite" duration-ms="3974" started-at="2020-07-27T07:54:20Z" finished-at="2020-07-27T07:54:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44040" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:37:31Z">
-      <class name="iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds">
-        <test-method status="PASS" signature="setup()[pri:0, instance:iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds@1e397ed7]" name="setup" is-config="true" duration-ms="183" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:36:47Z">
+    <test name="Test" duration-ms="3974" started-at="2020-07-27T07:54:20Z" finished-at="2020-07-27T07:54:24Z">
+      <class name="iam.getSecurityQuestionsList.TC_01_getSecurityQuesList">
+        <test-method status="PASS" signature="setup()[pri:0, instance:iam.getSecurityQuestionsList.TC_01_getSecurityQuesList@4566e5bd]" name="setup" is-config="true" duration-ms="47" started-at="2020-07-27T07:54:20Z" finished-at="2020-07-27T07:54:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createMerchant()[pri:0, instance:iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds@1e397ed7]" name="createMerchant" is-config="true" duration-ms="43815" started-at="2020-07-22T10:36:47Z" finished-at="2020-07-22T10:37:31Z">
+        <test-method status="PASS" signature="getSecQuesList()[pri:0, instance:iam.getSecurityQuestionsList.TC_01_getSecurityQuesList@4566e5bd]" name="getSecQuesList" is-config="true" duration-ms="3686" started-at="2020-07-27T07:54:20Z" finished-at="2020-07-27T07:54:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createMerchant -->
-        <test-method status="PASS" signature="TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds()[pri:0, instance:iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds@1e397ed7]" name="TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds" duration-ms="18" started-at="2020-07-22T10:37:31Z" finished-at="2020-07-22T10:37:31Z">
+        </test-method> <!-- getSecQuesList -->
+        <test-method status="PASS" signature="TC__01_getSecurityQuestionsList()[pri:0, instance:iam.getSecurityQuestionsList.TC_01_getSecurityQuesList@4566e5bd]" name="TC__01_getSecurityQuestionsList" duration-ms="40" started-at="2020-07-27T07:54:24Z" finished-at="2020-07-27T07:54:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds -->
-      </class> <!-- iam.createmerchant.TC_02_Create_Merchant_using_MandatoryAndMandatory_feilds -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TC__01_getSecurityQuestionsList -->
+      </class> <!-- iam.getSecurityQuestionsList.TC_01_getSecurityQuesList -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

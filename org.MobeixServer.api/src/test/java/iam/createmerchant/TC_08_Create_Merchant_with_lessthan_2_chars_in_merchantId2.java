@@ -1,6 +1,5 @@
 package iam.createmerchant;
 
-import org.apache.commons.lang3.RandomStringUtils;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -8,10 +7,8 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import mobeixapi.base.base;
-import mobeixapi.utilities.RestUtil;
 
 public class TC_08_Create_Merchant_with_lessthan_2_chars_in_merchantId2 extends base {
 	public static String merchantappkeyword = "AA";
