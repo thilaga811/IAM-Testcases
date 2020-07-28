@@ -9,7 +9,8 @@
 	<test thread-count="5" name="Test">
 		<packages>
             <package name="iam.getSecurityQuestionsList"/>
-            <package name="iam.registerPin"/>		         
+            <package name="iam.registerPin"/>	
+			<package name="iam.createmerchant"/>
 			         
         </packages>
 	</test> <!-- Test -->
